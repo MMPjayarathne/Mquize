@@ -1,0 +1,19 @@
+.navbar {
+  background-color: #092635;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  letter-spacing: 2px;
+}
+
+.app-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}

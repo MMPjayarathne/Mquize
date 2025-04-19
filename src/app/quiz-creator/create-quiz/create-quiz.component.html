@@ -1,1 +1,44 @@
-<p>create-quiz works!</p>
+<div class="container">
+    <h2>Create a New Quiz</h2>
+  
+    <form [formGroup]="quizForm" (ngSubmit)="submitQuiz()">
+      <div formArrayName="questions">
+        <div
+          *ngFor="let question of questions.controls; let i = index"
+          [formGroupName]="i"
+          class="question-block"
+        >
+          <label>Question {{ i + 1 }}</label>
+          <input type="text" formControlName="text" placeholder="Enter question..." />
+  
+          <div formArrayName="options">
+            <div
+              class="option-input"
+              *ngFor="let option of getOptions(question); let j = index"
+            >
+              <input
+                type="text"
+                [formControlName]="j"
+                placeholder="Option {{ j + 1 }}"
+              />
+            </div>
+          </div>
+  
+          <label>Correct Option Index:</label>
+          <input type="number" formControlName="correctOption" min="0" />
+  
+          <label>Time Limit (seconds):</label>
+          <input type="number" formControlName="timeLimit" min="5" />
+  
+          <button type="button" class="remove-btn" (click)="removeQuestion(i)">Remove</button>
+        </div>
+      </div>
+  
+      <button type="button" class="add-btn" (click)="addQuestion()">+ Add Question</button>
+  
+      <div class="actions">
+        <button type="submit">Save Quiz</button>
+      </div>
+    </form>
+  </div>
+  

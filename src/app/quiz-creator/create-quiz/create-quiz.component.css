@@ -1,0 +1,89 @@
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 24px;
+    background-color:#5C8374;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  h2 {
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .question-block {
+    border: 1px solidrgb(0, 0, 0);
+    padding: 16px;
+    color: #092635;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #9EC8B9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .question-block input,
+  .question-block select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    background-color:rgb(215, 238, 229);
+    border: 0px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+  }
+  
+  
+  .question-block input:focus {
+    border-color: #092635;
+    outline: none;
+  }
+  
+  .option-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #092635;
+    color: white;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .actions {
+    text-align: right;
+    margin-top: 24px;
+  }
+  
+  .add-btn {
+    background-color: #1B4242;
+    margin-top: 10px;
+  }
+  
+  .add-btn:hover {
+    background-color: #218838;
+  }
+  
+  .remove-btn {
+    background-color: #5C8374;
+    margin-left: auto;
+  }
+  
+  .remove-btn:hover {
+    background-color: #c82333;
+  }
+  
